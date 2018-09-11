@@ -1,0 +1,77 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Accueil</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Welcome to Ionic!</h2>
+
+  <ion-header>
+      <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+      <ion-list>
+        <ion-item *ngFor="let item of items">
+          {{ item }}
+        </ion-item>
+      </ion-list>
+      <ion-navbar>
+        <ion-title>DELICES DES ILES</ion-title>
+      </ion-navbar>
+    
+    </ion-header>
+    <ion-slides pager>
+
+        <ion-slide style="background-image:url('/assets/imgs/crevette.jpg');background-repeat:no-repeat; background-size:cover; background-position: center;">
+         
+          <ion-card>
+              <img src="assets/imgs/crevette.jpg"/>
+              <ion-card-content>
+                <ion-card-title>
+                  Carry crevette
+                  </ion-card-title>
+                <p>
+                  The most popular industrial group ever, and largely
+                  responsible for bringing the music to a mass audience.
+                </p>
+              </ion-card-content>
+            </ion-card>
+        </ion-slide>
+      
+        <ion-slide style="background-image:url('/assets/imgs/sushi.jpg');background-repeat:no-repeat; background-size:cover;  background-position: center;">
+          <h2>Sushi</h2>
+          <ion-card>
+              <img src="/assets/imgs/sushi.jpg"/>
+              <ion-card-content>
+                <ion-card-title>
+                  Sushi
+                  </ion-card-title>
+                <p>
+                  The most popular industrial group ever, and largely
+                  responsible for bringing the music to a mass audience.
+                </p>
+              </ion-card-content>
+            </ion-card>
+        </ion-slide>
+      
+        <ion-slide style="background-image:url('/assets/imgs/poulet.jpg');background-repeat:no-repeat; background-size:cover;">
+          <h2>Carry Poulets</h2>
+          <ion-card>
+              <img src="assets/imgs/poulet.jpg"/>
+              <ion-card-content>
+                <ion-card-title>
+                  Carry Poulet
+                  </ion-card-title>
+                <p>
+                  The most popular industrial group ever, and largely
+                  responsible for bringing the music to a mass audience.
+                </p>
+              </ion-card-content>
+            </ion-card>
+        </ion-slide>
+      
+      </ion-slides>
+
+    
+     
+ 
+</ion-content>

@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+     Contact
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-item>
+        <ion-label>Il est exactement :</ion-label>
+        <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="myDate"></ion-datetime>
+
+      </ion-item>
+      <ion-item>
+          <ion-label>Date :</ion-label>
+          <ion-datetime displayFormat="YYYY" pickerFormat="YYYY" [(ngModel)]="myDate"></ion-datetime>
+      </ion-item>
+
+
+  <ion-content padding>
+    <button ion-button block color="dark" (click)="showAlert()">Un petit message </button>
+  
+  </ion-content>
+</ion-content>

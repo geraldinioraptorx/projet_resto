@@ -1,0 +1,168 @@
+<ion-header>
+  <ion-navbar no-border-bottom>
+    <ion-title>
+      Nos recettes
+    </ion-title>
+  </ion-navbar>
+
+  <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="pet">
+      <ion-segment-button value="porc">
+        Porc
+      </ion-segment-button>
+      <ion-segment-button value="boeuf">
+        Boeuf
+      </ion-segment-button>
+      <ion-segment-button value="poisson">
+        Poisson
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div [ngSwitch]="pet">
+    <ion-list *ngSwitchCase="'porc'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/saute.jpg">
+        </ion-thumbnail>
+        <h2>Saute de porc</h2>
+        <p>4 cuillères à soupe de vinaigre balsamique<br>
+          3 cuillères à soupe de sucre<br>
+          1 cuillère à café de gingembre moulu<br>
+          2 cuillères à soupe d'huile (d'arachide c'est mieux)<br>
+          Poivre</p>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/porc caramel.jpg">
+        </ion-thumbnail>
+        <h2>Sauté de porc à la crème de moutard</h2>
+        <p>4 cuillères à soupe de vinaigre balsamique<br>
+          3 cuillères à soupe de sucre<br>
+          1 cuillère à café de gingembre moulu<br>
+          2 cuillères à soupe d'huile (d'arachide c'est mieux)<br>
+          Poivre</p>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/rotidijon.jpg">
+        </ion-thumbnail>
+        <h2>Roti de dijon</h2>
+        <p>4 cuillères à soupe de vinaigre balsamique<br>
+          3 cuillères à soupe de sucre<br>
+          1 cuillère à café de gingembre moulu<br>
+          2 cuillères à soupe d'huile (d'arachide c'est mieux)<br>
+          Poivre</p>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/porc gigembre.jpg">
+        </ion-thumbnail>
+        <h2>Porc Gimgembre</h2>
+        <p>4 cuillères à soupe de vinaigre balsamique<br>
+          3 cuillères à soupe de sucre<br>
+          1 cuillère à café de gingembre moulu<br>
+          2 cuillères à soupe d'huile (d'arachide c'est mieux)<br>
+          Poivre</p>
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'boeuf'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/boeuf.jpg">
+        </ion-thumbnail>
+        <h2>Boeuf Bourgignon</h2>
+        <p>600 g de bourguignone<br>
+          4 oignons<br>
+          4 carottes<br>
+          1 bouquet garni<br>
+          sel et poivre<br>
+          100 g de beurre</p>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/roti en croute.jpg">
+        </ion-thumbnail>
+        <h2>Milo</h2>
+        <p>800 g de boeuf non bardée<br>
+          1 rouleau de pâte feuilletée déjà étalée (275g)e<br>
+          1 laitue<br>
+          vf<br>
+          1 cuillère à soupe d'huile</p>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/burrito.jpg">
+        </ion-thumbnail>
+        <h2>Burrito</h2>
+        <p>500 g de boeuf hachée<br>
+          2 tomates<br>
+          1 cuillère à café de gingembre moulu<br>
+          2 cuillères à soupe d'huile (d'arachide c'est mieux)<br>
+          Poivre</p>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/boeuf moutarde.jpg">
+        </ion-thumbnail>
+        <h2>Boeuf à la moutarde</h2>
+        <p>1 kg de boeuf<br>
+          500 g d'oignone<br>
+          40 g de beurre<br>
+          100 g de moutarde)<br>
+          Poivre</p>
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'poisson'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/flan thon.jpg">
+        </ion-thumbnail>
+        <h2>Flan  aux thon</h2>
+        <p>4 cuillères à soupe de vinaigre balsamique<br>
+          3 cuillères à soupe de sucre<br>
+          1 cuillère à café de gingembre moulu<br>
+          2 cuillères à soupe d'huile (d'arachide c'est mieux)<br>
+          Poivre</p>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/sardines.jpg">
+        </ion-thumbnail>
+        <h2>Sardines farcies</h2>
+        <p>4 cuillères à soupe de vinaigre balsamique<br>
+          3 cuillères à soupe de sucre<br>
+          1 cuillère à café de gingembre moulu<br>
+          2 cuillères à soupe d'huile (d'arachide c'est mieux)<br>
+          Poivre</p>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/haren.jpg">
+        </ion-thumbnail>
+        <h2>Hareng</h2>
+        <p>4 cuillères à soupe de vinaigre balsamique<br>
+          3 cuillères à soupe de sucre<br>
+          1 cuillère à café de gingembre moulu<br>
+          2 cuillères à soupe d'huile (d'arachide c'est mieux)<br>
+          Poivre</p>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/rilleette maq.jpg">
+        </ion-thumbnail>
+        <h2>Rilettes aux maquereaux</h2>
+        <p>4 cuillères à soupe de vinaigre balsamique<br>
+          2 maquereaux = 450 gr de rillettese<br>
+          1 cuillère à café de gingembre moulu<br>
+          1 fourchette<br>
+          Poivre</p>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>
+
